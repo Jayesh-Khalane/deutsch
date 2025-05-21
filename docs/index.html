@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Learning Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">German Learning</div>
+            
+            <!-- Desktop Navigation -->
+            <nav>
+                <button id="cases-nav-btn" class="active">German Cases</button>
+                <button id="vocab-nav-btn">Vocabulary</button>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg id="moon-icon" class="hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg id="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-button" aria-label="Toggle menu">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container">
+                <button id="cases-mobile-btn" class="active">German Cases</button>
+                <button id="vocab-mobile-btn">Vocabulary</button>
+                <button id="theme-toggle-mobile" class="flex items-center">
+                    <span id="theme-text">Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- German Cases Section -->
+            <div id="cases-section">
+                <h2 class="section-title">German Cases Exercise</h2>
+                <div class="section-description">
+                    <p>Practice German cases (Nominativ, Akkusativ, Dativ) with articles and pronouns. Select the correct form for each question.</p>
+                </div>
+                
+                <div id="cases-quiz" class="quiz-container">
+                    <!-- Quiz content will be dynamically inserted here -->
+                </div>
+            </div>
+            
+            <!-- Vocabulary Section (initially hidden) -->
+            <div id="vocabulary-section" class="hidden">
+                <h2 class="section-title">Vocabulary Quiz</h2>
+                <div class="section-description">
+                    <p>Test your German vocabulary knowledge. Fill in the correct article and select the meaning for each word.</p>
+                </div>
+                
+                <div id="vocabulary-quiz" class="quiz-container">
+                    <!-- Quiz content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">German Learning Website &copy; <span id="current-year"></span></p>
+            <p class="footer-subtext">Learn German grammar and vocabulary with interactive exercises</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
